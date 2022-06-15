@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" >
+</head>
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+    } 
+    h1,h2{
+        text-align: center;
+    }
+</style>
+<body>  
+    <div class="Heading">
+        Classification of Diabetic Retinopathy stages
+    </div> 
+
+    <div class="navigation">
+        <a href="/" class="nav-button"> Home </a>
+        <a href="/about" class="nav-button">About</a>
+    </div> 
+
+    <h1>Results for the given Retina Image </h1> 
+    
+    <div> 
+        <img src="static/output/graph.png">
+    </div>
+    <div> 
+        <h1>Final Result</h1>
+        <h2>Stage:{{image[0]}}</h2>
+        <h2>Accuracy:{{image[1]}}</h2>
+    </div>
+</body>
+</html>

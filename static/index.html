@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" > 
+</head>
+<body>
+    <div class="Heading">
+        Classification of Diabetic Retinopathy stages
+    </div> 
+    
+    <div class="navigation">
+        <a href="/" class="nav-button"> Home </a>
+        <a href="/about" class="nav-button">About</a>
+    </div>  
+
+    <form method="post" action="results" class="img-form" onsubmit="alert('Image is uploading please wait')" enctype = "multipart/form-data">
+        <div>
+            <div>Upload Retina Image</div> 
+            <div></div><input type="file" name="file" required="required"></div>
+            <div></div><input type="submit" value="Upload" border-radius=50%></div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+h1{
+background-color:#639599;
+}
+body{
+background-color: #aff7e7;
+}
+.Heading{
+font-size: 30px; 
+color:black;
+text-align: center;
+}  
+.navigation{
+border-style: solid;
+border-color:blue;
+margin-top: 10px;
+}
+.nav-button{
+float:left
+border-style=none ridge none ridge;
+border-radius: 5px;
+padding: 2px;
+text-decoration: none;
+color:black;
+
+}
+.nav-button:hover{
+background-color:black;
+color:white;
+}
+.register-title{
+border-radius: 5px;
+font-size:1.0em;
+border:dotted;
+
+}
+.img-form{
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+}
+.eye-img{
+width:30%;
+height:30%;
+float:left;
+padding-left:90px;
+padding-top:25px;
+}
+.para{ 
+border-style:ridge;
+padding-left: 20px;
+}
+.img{
+    display: inline;
+}

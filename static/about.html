@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" >
+</head>
+<body>
+<div class="Heading" >
+    Classification of Diabetic Retinopathy stages
+</div>
+<div class="navigation">
+    <a href="/" class="nav-button"> Home </a>
+    <a href="/about" class="nav-button">About</a>
+</div> 
+<center> <h2>Diabetic Retinopathy</h2></center>
+<div class="para">
+    <p >Diabetic Retinopathy (DR) is a diabetes complication that affects vision. It is caused by damage to the blood vessels of retina. Early and accurate detection of DR is crucial to reduce likelihood of progression to proliferative retinopathy and blindness. The problem with the physical tests are they consume more time therefore affects patients and may lead to complete blindness. It is very difficult to identify through the tests during the early stage of the test. DR occurs because of swollen blood vessels as a result of high level of diabetes. The physical test for DR are very time consuming as it involves capturing of eye by fundus camera. To accelerate this process some, form of computer processing is required.</p>
+
+    <p >Our project uses a Convolutional Neural Network (CNN) based approach to detect and classify the grades of DR. CNN is preferred because it handles all the pre-processing of images and normalization by itself. It uses the concept of filter to extract the necessary features to classify the DR. CNN with help of keras provides greater flexibility in terms of image handling and processing and we are using a high-level Python web framework called Django for user interaction and classifies the severity of DR into stages, they are:</p>
+        <ol>
+            <li><p>Normal</p></li>
+            <li><p>Mild</p></li>
+            <li><p>Moderate</p></li>
+            <li><p>Severe</p></li>
+            <li><p>Proliferative</p></li>
+        </ol>
+</div>
+</body>
+</html>
